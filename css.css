@@ -1,0 +1,64 @@
+/* ----- ESTILO GENERAL ----- */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* ----- ENCABEZADO ----- */
+header {
+    background-color: #2a4d69;
+    color: white;
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+/* ----- CONTENEDOR PRINCIPAL ----- */
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 40px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ----- IMAGEN ----- */
+.banner {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* ----- BOTÓN ----- */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #2a4d69;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #1f3a50;
+}
+
+.mensaje-exito {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    z-index: 1000;
+}
