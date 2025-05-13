@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dunder Mifflin - Papel ilimitado en un mundo sin papel</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #000000;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 5px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .productos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .producto {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            padding: 15px;
+            transition: transform 0.2s ease;
+        }
+
+        .producto:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        .producto img {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .producto h3 {
+            margin-bottom: 10px;
+            color: #4a90e2;
+        }
+
+        .producto p {
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        .precio {
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: #27ae60;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+            font-size: 0.9rem;
+        }
+
+        /* Botón de compra */
+        .btn-comprar {
+            display: inline-block;
+            background-color: #27ae60;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-comprar:hover {
+            background-color: #219150;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dunder Mifflin</h1>
+        <p>Papel ilimitado en un mundo sin papel</p>
+    </header>
+
+    <main>
+        <section class="productos">
+            <article class="producto">
+                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.amazon.com.mx%2FOficina-Papel-Ream-Dunder-Mifflin%2Fdp%2FB006CDW35O&psig=AOvVaw0eFzGCmGfS5ItbzPCo59vt&ust=1745435266282000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMCYjpqr7IwDFQAAAAAdAAAAABA2" alt="Papel Bond A4" />
+                <h3>Papel Bond A4</h3>
+                <p>Papel blanco tamaño A4, ideal para impresión y escritura.</p>
+                <p class="precio">$150 por resma (500 hojas)</p>
+                <a href="#" class="btn-comprar">Comprar</a>
+            </article>
+
+            <article class="producto">
+                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.amazon.com.mx%2FOficina-Papel-Ream-Dunder-Mifflin%2Fdp%2FB006CDW35O&psig=AOvVaw0eFzGCmGfS5ItbzPCo59vt&ust=1745435266282000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMCYjpqr7IwDFQAAAAAdAAAAABA2" alt="Papel Kraft" />
+                <h3>Papel Kraft</h3>
+                <p>Resistente y ecológico, perfecto para embalajes y manualidades.</p>
+                <p class="precio">$120 por paquete</p>
+                <a href="#" class="btn-comprar">Comprar</a>
+            </article>
+
+            <article class="producto">
+                <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=400&q=80" alt="Papel Fotográfico" />
+                <h3>Papel Fotográfico</h3>
+                <p>Acabado brillante para impresiones de alta calidad.</p>
+                <p class="precio">$200 por paquete (50 hojas)</p>
+                <a href="#" class="btn-comprar">Comprar</a>
+            </article>
+
+            <article class="producto">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Papel de Colores" />
+                <h3>Papel de Colores</h3>
+                <p>Variedad de colores para proyectos escolares y creativos.</p>
+                <p class="precio">$100 por paquete (100 hojas)</p>
+                <a href="#" class="btn-comprar">Comprar</a>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2025 Tienda de Papel. Todos los derechos reservados.
+    </footer>
+</body>
+</html>
